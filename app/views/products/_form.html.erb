@@ -17,6 +17,11 @@
   </div>
 
   <div>
+    <%= form.label :featured_image, style: "display: block; margin-bottom: 5px;" %>
+    <%= form.file_field :featured_image %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
