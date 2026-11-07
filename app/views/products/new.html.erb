@@ -1,0 +1,12 @@
+<%# app/views/products/new.html.erb %>
+<h1>New Product</h1>
+
+<%= form_with model: @product, local: true do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
